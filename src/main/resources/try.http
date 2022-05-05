@@ -1,0 +1,53 @@
+GET http://localhost:8080/students
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://localhost:8080/student_lessons/1
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+DELETE http://localhost:8080/delete_student/8
+Content-Type: application/json
+
+{
+
+}
+
+
+###
+
+PUT http://localhost:8080/new_student
+Content-Type: application/json
+
+{
+  "fullName": "Irina"
+}
+###
+
+PUT http://localhost:8080/new_student
+Content-Type: application/json
+
+{
+  "fullName": "Viktor",
+  "subscription": {},
+  "lessons": [
+    {
+      "name": "art",
+      "dateOfWeek": "Monday"
+    },
+    {
+      "name": "art2",
+      "dateOfWeek": "Sunday"
+    }
+  ]
+}
